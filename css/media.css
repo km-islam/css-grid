@@ -1,0 +1,14 @@
+/*====== Extra small devices ======*/ 
+@media (max-width: 575.98px) { 
+
+.top-banner{
+    grid-template-areas: 
+        'banner banner '
+        'top-box-a top-box-b';
+}
+    #portfolio {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(auto-fit, (1fr));
+}
+}

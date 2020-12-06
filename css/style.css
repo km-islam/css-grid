@@ -1,0 +1,183 @@
+/*CSS Variables*/
+:root{
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104,104,104, 0.8);
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: var(--dark);
+}
+ul,li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background: #ccc;
+    margin: 30px 50px;
+    line-height: 1.4;
+}
+.btn{
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    border: 0;
+    transition: all linear .3s;
+    text-align: center;
+}
+.btn:hover{
+    background: var(--light);
+    color: var(--dark);
+}
+img{
+    max-width: 100%; 
+}
+.wrapper{
+    display: grid; 
+    grid-gap: 20px; 
+}
+/*  header part css  */
+.main-nav ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
+.main-nav a{
+    background: var(--primary);
+    display: block;
+    padding: 12px;text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 18px;
+    box-shadow: var(--shadow);
+}
+.main-nav a:hover{
+    background: var(--dark);
+    color: var(--light);
+    transition: all linear .3s;
+}
+.top-banner{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+        'banner banner top-box-a'
+        'banner banner top-box-b';
+}
+.banner{
+    grid-area: banner;
+    min-height: 500px;
+    background: url(../images/support.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    box-shadow: var(--shadow);
+}
+.banner h1{
+    color: var(--light);
+    margin-bottom: 0;
+    font-size: 48px;
+}
+.banner p{
+    color: var(--light);
+    margin-top: 0;
+    font-size: 20px;
+}
+.banner .btn{
+    margin-top: 40px;
+}
+.box-itam{
+    background: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow);
+    padding: 20px;
+}
+.box-itam .price{
+    font-size: 36px;
+}
+.top-box-a{
+    grid-area: top-box-a;
+}
+.top-box-b{
+    grid-area: top-box-b;
+}
+
+/*  service part css  */
+#service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    grid-gap: 20px;
+}
+.service-itam{
+    text-align: center;
+    background: var(--primary);
+    padding: 20px 30px;
+    box-shadow: var(--shadow);
+}
+.service-itam i{
+    font-size: 60px;
+    padding-bottom: 15px;
+}
+.service-itam h3{
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+.service-itam p{
+    font-size: 14px;
+}
+
+
+/*  info part css  */
+
+#info{
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(2,1fr);
+    padding: 35px;
+    box-shadow: var(--shadow);
+    justify-content: center;
+}
+.info-text .btn{
+    display: inline-block;
+    margin-top: 50px;
+    
+}
+.info-text h2{
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+
+
+/*  portfolio part css  */
+#portfolio{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.portfolio-itam img{
+    width: 100%;
+    box-shadow: var(--shadow);
+}
+#footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 20px;
+    margin-top: 35px;
+}
+#footer p{
+        color: var(--light);
+}
